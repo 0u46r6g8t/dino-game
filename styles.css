@@ -1,0 +1,60 @@
+body{
+    background: #fafafa;
+}
+
+.dino{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-image: url('./images/dino.png'); 
+    bottom: 10px;
+}
+
+.cactus{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url('./images/cactus.png');
+}
+
+.game-over{
+    text-align: center;
+    color: #a1a1a1;
+    margin-top: 120px;
+    font-family: Arial;
+}
+
+@keyframes slideright/*Serve para definir animação */{
+    from{
+        background-position: 70000%;
+    }
+
+    to{
+        background-position: 0;
+    }
+}
+
+.background{
+    position: absolute;
+    bottom: 0;
+    background-image: url('./images/background.png');
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
+
+/* Configurando o contador de pontos */
+
+#point-dino{
+    margin: 10% 40% 60%;
+    font-family: Arial;
+    text-transform: uppercase;
+}
+
+/* Configurando o border do point */
+
+#border-point {
+    padding: 10px;
+}
